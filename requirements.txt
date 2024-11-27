@@ -12,3 +12,7 @@ supabase
 gunicorn
 apscheduler
 redis
+streamlit==1.25.0
+pandas
+numpy
+matplotlib
