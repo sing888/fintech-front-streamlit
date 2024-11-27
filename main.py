@@ -6,11 +6,11 @@ url = 'https://lending-club-with-rf-flask-app.onrender.com/predict'
 st.title("Loan Default Prediction") 
 
 
-loan_amnt = st.number_input('Loan Amount',value=0, min_value=0, step=1, format="%d", key="1")
-funded_amnt = st.number_input('Funded Amount',value=0, min_value=0, step=1, format="%d", key="2")
+loan_amnt = st.number_input('Loan Amount',value=None, min_value=0, step=1, format="%d", key="1")
+funded_amnt = st.number_input('Funded Amount',value=None, min_value=0, step=1, format="%d", key="2")
 term = st.selectbox('Term', ['-- Select an Option --','36 months', '60 months'],key="3")
-int_rate = st.number_input('Interest Rate',value=0, min_value=0.0000, key="4")
-installment = st.number_input('Installment',value=0, min_value=0.00, key="5")
+int_rate = st.number_input('Interest Rate',value=None, min_value=0.0000, key="4")
+installment = st.number_input('Installment',value=None, min_value=0.00, key="5")
 grade = st.selectbox('Grade',['-- Select an Option --','A','B','C','D','E','F','G'], key="6")
 subgrade = st.selectbox('Subgrade',['-- Select an Option --','A1','A2','A3','A4','A5','B1','B2','B3','B4','B5','C1','C2','C3','C4','C5','D1','D2','D3','D4','D5','E1','E2','E3','E4','E5','F1','F2','F3','F4','F5','G1','G2','G3','G4','G5'], key="7")
 emp_length = st.text_input('Employment Length', key="8")
